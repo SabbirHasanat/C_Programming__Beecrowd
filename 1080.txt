@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int i,j=0,p,a[100];
+
+    for (i=0;i<100;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<100;i++){
+        if(a[i] > j){
+            j = a[i];   // 'j' for assigning highest number from array.
+            p = i+1;   /* array start from '0' but position start from natural number
+                         '1'...thats why use 'i+1' and p for assigning position */
+        }
+    }
+    printf("%d\n",j);
+    printf("%d\n",p);
+
+    return 0;
+}
